@@ -6,16 +6,17 @@
 /* File 01 - Classes */
 
 // To create classes we use reserved word class.
-class Mobile
+class Laptop
 {
 }
 
 // We can instantitate classes like this
-$modernMobile = new Mobile();
-$oldMobile = new Mobile();
+
+$lenovo  = new Laptop();
+$apple = new Laptop();
 
 // we can use var_dump so we can visualize our new class objects
 
-var_dump($modernMobile);
+var_dump($lenovo);
 echo "<br>";
-var_dump($oldMobile);
+var_dump($apple);

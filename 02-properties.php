@@ -6,34 +6,38 @@
 /* File 02 - Properties */
 
 // classes have properties that contain information about that object defined by the class
-class Mobile {
-    public $name; // Public makes sure we can access this properties outside the class.
-    public $chipset;
-    public $internalMemory;
+class Laptop
+{   // properties
+    public $brand;
+    public $cpu;
+    public $ram;
+    public $storage;
 }
 
-$modernMobile = new Mobile();
+$newLaptop = new Laptop();
 
 // in OOP and PHP we use the arrow operator ( -> ) for accessing properties
-
 // we can assign those public properties in our class with this syntax
-$modernMobile->name = "Samsung s20";
-$modernMobile->chipset = "Exynos";
-$modernMobile->internalMemory = 128;
+
+$newLaptop->brand = "Apple";
+$newLaptop->cpu = "M1 Max";
+$newLaptop->ram = "16gb";
+$newLaptop->storage = "1tb";
 
 echo "<br>";
 
 // we can also access properties value by the arrow operator
-echo $modernMobile->chipset;
+echo $newLaptop->cpu;
 
 // what happens if we assign a non existing value or a wrong value?
-$modernMobile->ramMemory = 1;
-$modernMobile->internMemory = 8;
+$newLaptop->ramMemory = 1;
+$newLaptop->internMemory = 8;
 
 echo "<pre>";
-var_dump($modernMobile);
+var_dump($newLaptop);
 echo "</pre>";
 
+// it adds these new properties to the object. 
 echo "<br>";
 
 //-----------------------------------------------------
