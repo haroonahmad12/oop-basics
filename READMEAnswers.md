@@ -9,4 +9,10 @@ Object is an instance of the class.
 
 ### [03 - What is an Instance?] <!-- omit in toc -->
 
-### [04 - What is Property?](./02-properties.php) <!-- omit in toc -->
+Creating a new object from the class.
+
+### [04 - What are methods?](./03-methods.php) <!-- omit in toc -->
+
+functions created inside the class are called methods.
+
+### [05 - What are Getters?](./04-getters.php) <!-- omit in toc -->

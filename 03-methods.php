@@ -6,23 +6,35 @@
 /* File 03 - Properties */
 
 // in a class we have properties and methods. This methods act like functions and allow classes to develop tasks and functionalities.
-class Mobile
-{
-    public $name;
-    public $chipset;
-    public $internalMemory;
+
+
+class Laptop
+{   // properties
+    public $brand;
+    public $cpu;
+    public $ram;
+    public $storage;
+
 
     // method that returns class properties in a string.
     public function showSpecs()
     {
-        return $this->name . " includes a " . $this->chipset . " chipset and " . $this->internalMemory . "GB of internal memory";
+        return $this->brand . " includes a " . $this->cpu . " CPU and " . $this->storage . "GB of internal memory";
+    }
+
+    public function getCpuModel()
+    {
+        return $this->cpu;
     }
 }
 
+$lenovoGaming = new Laptop();
+$lenovoGaming->brand = "Lenovo Ideapad Gaming";
+$lenovoGaming->cpu = "AMD Ryzen 5 5600h";
+$lenovoGaming->storage = "480";
 
-$modernMobile = new Mobile();
-$modernMobile->name = "Samsung s20";
-$modernMobile->chipset = "Exynos";
-$modernMobile->internalMemory = 128;
+echo $lenovoGaming->showSpecs();
 
-echo $modernMobile->showSpecs();
+echo "<br/>";
+
+echo $lenovoGaming->getCpuModel();

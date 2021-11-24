@@ -6,26 +6,23 @@
 /* File 04 - Getters */
 
 // Encapsulation is one of the principles in OOP, we use getters methods in order to keep information safe.
-class Mobile
-{
-    public $name;
-    public $chipset;
-    public $internalMemory;
+class Laptop
+{   // properties
+    public $brand;
+    public $cpu;
+    public $ram;
+    public $storage;
 
-    // methods for getting properties
-    public function getName()
+
+    // method that returns class properties in a string.
+    public function showSpecs()
     {
-        return "--- " . $this->name . " ---";
+        return $this->brand . " includes a " . $this->cpu . " CPU and " . $this->storage . "GB of internal memory";
     }
 
-    public function getChipset()
+    public function getCpuModel()
     {
-        return $this->chipset;
-    }
-
-    public function getInternalMemory()
-    {
-        return $this->internalMemory;
+        return $this->cpu;
     }
 }
 
